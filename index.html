@@ -18,9 +18,9 @@
             </div>
             <div class="right">
                 <ul class="links">
-                    <li><a href="https://github.com/kimpham301"><img style="width:25px;height:25px" src="./static/github.png"></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCG4nnXO_5MUlK5mjEhM8Z8g"><img style="width:25px;height:25px" src="./static/youtube.png"></a></li>
-                    <li><a href="https://www.linkedin.com/in/thanh-pham-83048521b/"><img style="width:25px;height:25px" src="./static/in.png"></a></li>
+                    <li><a href="https://github.com/kimpham301"><img style="width:25px;height:25px" src="./static/github.png" alt="Github"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCG4nnXO_5MUlK5mjEhM8Z8g"><img style="width:25px;height:25px" src="./static/youtube.png" alt="Youtube"></a></li>
+                    <li><a href="https://www.linkedin.com/in/thanh-pham-83048521b/"><img style="width:25px;height:25px" src="./static/in.png" alt="Linkedin"></a></li>
                 </ul>
             </div>
             </div>
@@ -35,5 +35,37 @@
             </div>
         
         </div>
+
+        <div class="main">
+            <a name="Aboutme">
+            <div id="aboutme" class="dropdown">
+            <a class="dropdown-link" href="#">ABOUT ME <span class="icons">-</span></a>
+            <div class="dropdown-container">
+                <p> I was born in Vietnam. I came to the United States when I was 18.</p>
+                <p>My hobbies are photography, web designs and graphic designs. But I also very enjoy learning new things.</p>
+            </div></div>
+            </a>
+        </div>
+        <script>
+            $(document).ready(function () {
+    
+                $("a.dropdown-link").click(function (e) {
+                    e.preventDefault();
+                    var $div = $(this).next('.dropdown-container');
+                    var $icon = $(this).children('.icons').first();
+    
+                    $(".dropdown-container").not($div).hide();
+                    $(".icons").not($icon).text('+');
+                    if ($div.is(":visible")) {
+                        $div.hide();
+                        $icon.text('+');
+                    } else {
+                        $div.show();
+                        $icon.text('-');
+                    }
+                });
+            });
+    
+        </script>
     </body>
 </html>
