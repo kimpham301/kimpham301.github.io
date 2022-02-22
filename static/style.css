@@ -12,8 +12,6 @@ body{
     background: linear-gradient(180deg, #93a8ad, rgba(82, 82, 82, 0.3)) no-repeat fixed,
     url(cloud.png) no-repeat fixed;
     background-size: contain;
-}
-.header{
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -25,9 +23,11 @@ body{
     display:flex;
     height:50px;
     justify-content: space-between;
-
-
 }
+.photo img:hover{
+    box-shadow: 0 0 2px 3px rgba(0,0,0,.1);
+}
+
 .links{
     list-style-type: none;
     display:flex;
