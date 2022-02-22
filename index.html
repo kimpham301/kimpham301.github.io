@@ -2,10 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Thanh Kim Pham's portfolio</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="keyword" content="Kim Pham, portfolio, javascript, student, web, developer, code">
+        <meta name="description" content="Senior student majoring in Computer Science at Texas State and aspiring web application developer.">
+        <title>Thanh Kim Pham - My portfolio</title>
         <link rel="stylesheet" href="./static/style.css">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="header">
@@ -26,7 +31,7 @@
             </div>
             <div class="container">
                 <div class="info">
-                    <h1>Welcome to my online portfolio !</h1>
+                    <h1 class="h1">Hello, I'm a <span id="animate"></span></h1>
                     <p id="info-para">I am a senior at Texas State University, looking to gain more hands-on experience in the tech industry.</p>
                 </div>
                 <div class="photo">
@@ -41,31 +46,28 @@
             <div id="aboutme" class="dropdown">
             <a class="dropdown-link" href="#">ABOUT ME <span class="icons">-</span></a>
             <div class="dropdown-container">
-                <p> I was born in Vietnam. I came to the United States when I was 18.</p>
+                <p> I was born in Vietnam. I came to the United States when I was 18 year old.</p>
                 <p>My hobbies are photography, web designs and graphic designs. But I also very enjoy learning new things.</p>
+                <P>I learned about coding when I was about 9-10 years old. I created some fanclub forums for my favorite movies, anime, singers and actors and edited their theme.
+                    One forum I made for singer, actress Selena Gomez had thousands of members. It eventually became the biggest fansite of her at the time. It was a very interesting time and I got to meet a lot of people from the community. </p>
+                <p>Few years later, I found a new hobbies which is video editing and graphic designs. I spent most of the times doing those, so I stop coding since, because at that time there wasn't much resources and teaching of that field</p>
+                <p>When I was 18, I decided to come to the US, I know there is a lot of new technology and it's still evolving everyday. I wanted to comeback to coding and it brought me back to those sweet memories when I stayed up late almost every night debugging my theme, or creating new theme for the forum. I just loved it when I could see the satisfying results. </p>
+                <p>Now I'm a student at Texas State University, majoring in Computer Science, looking forward to become a web developer or software developer.</p>
             </div></div>
             </a>
         </div>
-        <script>
-            $(document).ready(function () {
+    <script>
+        
+var typed = new Typed("#animate", {
+    strings: ["student.", "coder.", "video editor", "art lover"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+  });
+  
+    </script>
+            
     
-                $("a.dropdown-link").click(function (e) {
-                    e.preventDefault();
-                    var $div = $(this).next('.dropdown-container');
-                    var $icon = $(this).children('.icons').first();
-    
-                    $(".dropdown-container").not($div).hide();
-                    $(".icons").not($icon).text('+');
-                    if ($div.is(":visible")) {
-                        $div.hide();
-                        $icon.text('+');
-                    } else {
-                        $div.show();
-                        $icon.text('-');
-                    }
-                });
-            });
-    
-        </script>
+        
     </body>
 </html>
