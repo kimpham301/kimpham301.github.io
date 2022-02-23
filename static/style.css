@@ -250,10 +250,10 @@ h1{
     
 }
 .prog-lan h3, .framework h3{
-    flex:0 1 100px;
+    flex:1 1 auto;
 }
 .pro-lan .list-skills, .framework .list-skills{
-    flex:0 1 150px;
+    flex:1 1 auto;
 }
 
 li{
