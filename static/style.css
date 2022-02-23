@@ -249,11 +249,11 @@ h1{
     
 }
 .prog-lan h3, .framework h3{
-    flex:1 0 30px;
+    flex:1 1 auto;
 }
 .pro-lan .list-skills, .framework .list-skills{
    
-    flex:1 0 auto;
+    flex:1 1 auto;
 }
 
 li{
