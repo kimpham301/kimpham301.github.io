@@ -237,7 +237,7 @@ h1{
 #skills .prog-lan, #skills .frameworks{
     border:var(--dark-gray) solid 2px;
     height:200px;
-    width:250px;
+    max-width:250px;
     padding-right:20px;
     background: #fff;
     border-radius: 15px;
@@ -316,16 +316,5 @@ li{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding:30px;
-        }
-        #skills .prog-lan, #skills .frameworks{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            text-align: center;;
-            flex: 1 0 auto;
-            
         }
     }
