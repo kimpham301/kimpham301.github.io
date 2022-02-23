@@ -48,8 +48,8 @@
         </div>
 
         <div class="main">
-            <a name="about">
-            <div id="aboutme" class="dropdown">
+            <section id ="about">
+            <div id="aboutme" class="contain-main">
             <a class="dropdown-link" href="#">ABOUT ME <span class="icons">-</span></a>
             <div class="dropdown-container">
                 <p> I was born in Vietnam. I came to the United States when I was 18 year old.</p>
@@ -60,20 +60,60 @@
                 <p>When I was 18, I decided to come to the US, I know there is a lot of new technology and it's still evolving everyday. I wanted to comeback to coding and it brought me back to those sweet memories when I stayed up late almost every night debugging my theme, or creating new theme for the forum. I just loved it when I could see the satisfying results. </p>
                 <p>Now I'm a student at Texas State University, majoring in Computer Science, looking forward to become a web developer or software developer.</p>
             </div></div>
-            </a>
+        </section>
         </div>
     <script>
+        var typed = new Typed("#animate", {
+            strings: ["student.", "coder.", "video editor", "art lover"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
         
-var typed = new Typed("#animate", {
-    strings: ["student.", "coder.", "video editor", "art lover"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    loop: true,
-  });
-  
-    </script>
-            
-    
+            </script>
+         
+        <section id="skills">
+            <div id="skill-m" class="contain-main">
+                <a class="dropdown-link" href="#">SKILLS<span class="icons">-</span></a>
+                <div class="dropdown-container">
+                <div class="prog-lan">
+                    <h3>Languages</h3>
+                    <ul class="list-skills">
+                        <li>JS</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>HTML + CSS</li>
+                    </ul>
+                </div>
+                <div class="frameworks">
+                    <h3>Frameworks/Libraries/Database</h3>
+                    <ul class="list-skills">
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Flask</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+         </section>
+<section id="project">
+    <div id="myproject" class="contain-main">
+        <a class="dropdown-link" href="#">PROJECTS<span class="icons">-</span></a>
+        <div class="dropdown-container">
+           <ul class="list-pj">
+               <li>Online Income Calculator</li>
+               <li>Odin Recipes</li>
+               <li>My Portfolio</li>
+           </ul>
+           <ul class="list-pj">
+            <li><a href="https://github.com/kimpham301/web-groupprj">View Code</a></li>
+            <li><a href="https://kimpham301.github.io/odin-recipes/">View Demo</a>&nbsp|&nbsp<a href="https://github.com/kimpham301/odin-recipes">View Code</a></li>
+            <li><a href="https://kimpham301.github.io/odin-recipes/">View Demo</a>&nbsp|&nbsp<a href="https://github.com/kimpham301/odin-recipes">View Code</a></li>
+        </ul>
+        </div></div>
+    </section>
         
     </body>
 </html>

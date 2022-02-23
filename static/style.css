@@ -87,6 +87,10 @@ body{
     box-shadow: 5px 5px var(--dark-purp);
     margin:30px;
 }
+#btn-1:hover{
+    background-color: var(--dark-gray);
+    color:var(--text-color)
+}
 #btn-2{
     background: var(--dark-purp);
     color:var(--text-color);
@@ -94,6 +98,10 @@ body{
     border: var(--dark-mint) solid 2px;
     box-shadow: 5px 5px var(--dark-mint);
     margin:30px;
+}
+#btn-2:hover{
+    background: var(--light-min);
+    color:var(--dark-gray);
 }
 .info{
     transform: translatey(0px);
@@ -163,7 +171,7 @@ h1{
     font-size:40px;
 }
 
-#info-para{
+.info #info-para{
     display:flex;
     width:500px;
     flex-wrap: wrap;
@@ -186,17 +194,17 @@ h1{
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    color:#7e8d91;
     font-size:35px;
     font-weight: 700;
-}
-.dropdown{
-    padding:20px;
-    border: #7e8d91 solid 1px;
 }
 #aboutme{
     transform: translate(10%);
     width:80%;
+    padding:20px;
+    border: #7e8d91 solid 1px;
+}
+#aboutme a{
+    color: var(--dark-mint);
 }
 @media only screen and (max-width : 880px) {
 /* Styles */
@@ -229,4 +237,49 @@ h1{
         height:280px;
         width:auto;
     }
+}
+
+#skills, #project{
+    padding:20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#skills{
+    background: var(--dark-mint);
+}
+.contain-main{
+    width: 80%;
+    transform: translate(10%,0%);
+}
+#skills .dropdown-container, #project .dropdown-container{
+    padding:40px;
+    display: flex;
+    justify-content: space-around;
+    padding:30px;
+}
+#skills a{
+    color:var(--text-color);
+}
+#skills .prog-lan, #skills .frameworks{
+    border:var(--dark-gray) solid 2px;
+    height:200px;
+    width:250px;
+    padding-right:20px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;;
+    
+}
+li{
+    list-style-type: none;
+}
+
+#project a{
+    color: var(--dark-mint);
+    text-decoration:none;
 }
