@@ -247,9 +247,12 @@ h1{
     align-items: center;
     flex-wrap: wrap;
     text-align: center;;
-    flex: 0 0 auto;
     
 }
+.prog-lan h3, .framework h3, .pro-lan .list-skills, .framework .list-skills{
+    flex:1
+}
+
 li{
     list-style-type: none;
 }
