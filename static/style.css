@@ -318,4 +318,14 @@ li{
             align-items: center;
             padding:30px;
         }
+        #skills .prog-lan, #skills .frameworks{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;;
+            flex: 1 0 auto;
+            
+        }
     }
