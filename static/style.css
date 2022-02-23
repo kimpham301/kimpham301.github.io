@@ -237,20 +237,23 @@ h1{
 #skills .prog-lan, #skills .frameworks{
     border:var(--dark-gray) solid 2px;
     height:200px;
-    max-width:250px;
+    width:250px;
     padding-right:20px;
     background: #fff;
     border-radius: 15px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;;
     
 }
-.prog-lan h3, .framework h3, .pro-lan .list-skills, .framework .list-skills{
-    flex:1
+.prog-lan h3, .framework h3{
+    flex:0 1 100px;
+}
+.pro-lan .list-skills, .framework .list-skills{
+    flex:0 1 150px;
 }
 
 li{
