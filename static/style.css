@@ -237,7 +237,6 @@ h1{
 #skills .prog-lan, #skills .frameworks{
     border:var(--dark-gray) solid 2px;
     height:200px;
-    width:250px;
     padding-right:20px;
     background: #fff;
     border-radius: 15px;
