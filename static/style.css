@@ -20,11 +20,13 @@ body{
     display: flex;
     flex-direction: column;
 }
-.header{
+.header, .footer{
     background-color: var(--light-min);
     background: linear-gradient(180deg, var(--light-min), rgba(56, 56, 56, 0.3)) no-repeat fixed,
     url('cloud.png') no-repeat fixed;
     background-size: cover;
+}
+.header{
     box-shadow: 0 0 8px rgba(0,0,0,.1);
     color: var(--text-color);
     min-height: 100vh;
@@ -282,4 +284,12 @@ li{
 #project a{
     color: var(--dark-mint);
     text-decoration:none;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 10vh;
+    font-size: 30px;
+    color: var(--text-color)
 }
