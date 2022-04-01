@@ -1,4 +1,11 @@
 
+var typed = new Typed("#animate", {
+    strings: ["a student.", "a coder", "a video editor", "an art lover"],
+    typeSpeed: 80,
+    backSpeed: 80,
+    loop: true,
+});
+
 ///show/hide container
 $(document).ready(function () {
     
